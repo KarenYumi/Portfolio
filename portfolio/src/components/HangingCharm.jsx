@@ -16,13 +16,13 @@ export default function HangingCharm() {
   const rotation = Math.sin(scrollY * 0.03) * 8
 
   return (
-    <div className="fixed top-0 left-4 z-50 pointer-events-none">
+    <div className="fixed top-0 right-4 md:right-auto md:left-4 z-50 pointer-events-none">
       <div className="flex flex-col items-center">
         <div className="w-px h-11" />
         <img
           src={charm}
           alt="Pingente decorativo"
-          className="w-35 md:w-42 select-none drop-shadow-[0_10px_20px_rgba(0,0,0,0.35)]"
+          className="w-30 md:w-42 select-none drop-shadow-[0_10px_20px_rgba(0,0,0,0.35)]"
           style={{
             transform: `rotate(${rotation}deg)`,
             transformOrigin: 'top center',
