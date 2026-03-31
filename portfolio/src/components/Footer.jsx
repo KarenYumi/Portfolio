@@ -1,5 +1,8 @@
 export default function Footer() {
-  return(
-    <h1>Footer</h1>
+  return (
+    <section className='h-80 bg-linear-to-t from-pink-400 to-zinc-950"'>
+
+
+    </section>
   );
 }

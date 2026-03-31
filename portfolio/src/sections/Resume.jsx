@@ -62,7 +62,7 @@ export default function Resume() {
   return (
     <>
       <section id='resume' className="min-h-screen flex items-center bg-zinc-950 text-white">
-        <div className="max-w-6xl 2xl:max-w-7xl mx-auto px-6 py-20 w-full">
+        <div className="max-w-6xl 2xl:max-w-7xl mx-auto px-6 pb-20 w-full">
           <h2 className='text-4xl md:text-5xl font-bold tracking-tight mb-10 cinzel-font'>Resume</h2>
           <div className="grid md:grid-cols-2 gap-16 items-start mb-6">
             <div className="space-y-10">
