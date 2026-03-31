@@ -5,26 +5,22 @@ export default function About() {
   return (
     <>
       <section id='about' className="min-h-screen flex items-center text-white bg-linear-to-b from-violet-500 to-zinc-950">
-        <div className="max-w-6xl mx-auto px-10 py-20 w-full">
+        <div className="max-w-6xl 2xl:max-w-7xl mx-auto px-10 py-20 w-full">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <p className="text-zinc-300 mb-4">Hello!!</p>
-
               <h1 className="text-4xl md:text-6xl font-bold leading-tight">
                 I'm Karen
               </h1>
-
               <h2 className="text-xl md:text-2xl text-zinc-300 mt-2">
                 A Software Developer Full-Stack
               </h2>
-
               <p className="text-zinc-400 mt-6 max-w-xl leading-relaxed">
                 I'm always learning something new and keeping up with what's happening in the world.
                 I'm enthusiastic, curious, and I love thinking critically about things. My journey into tech started later than most,
                 my mom worked in the field, and she inspired me to give it a shot. I had zero experience before college, but the moment
                 I got my first taste of it, I was hooked.
               </p>
-
               <div className="flex flex-row gap-8 mt-8">
                 <a
                   href="https://www.instagram.com/k_yumiii/"
