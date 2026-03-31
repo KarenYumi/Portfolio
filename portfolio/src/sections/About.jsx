@@ -1,5 +1,6 @@
 import { Github, Instagram, Linkedin, Mail } from 'lucide-react';
 import happyFace from '../assets/images/happyFace.jpeg'
+import cursor from '../assets/images/cursor.png'
 
 export default function About() {
   return (
@@ -59,6 +60,7 @@ export default function About() {
             <div className="flex justify-center md:justify-end">
               <div className="relative w-72 h-72 md:w-96 md:h-96">
                 <img src={happyFace} className="w-full h-full rounded-full border border-zinc-800 object-cover" />
+                <img src={cursor} className="absolute w-40 top-80" />
                 <span className="absolute top-6 -left-3 bg-emerald-400 text-white text-xl px-6 py-2 rounded-full shadow-lg">
                   Brasilian
                 </span>
