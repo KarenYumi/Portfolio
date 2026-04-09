@@ -10,46 +10,81 @@ import inception from '../assets/images/Inception.jpg'
 import music from '../assets/images/music.png'
 import flower from '../assets/images/flower.png'
 import potery from '../assets/images/potery.png'
+import disc1 from '../assets/images/disc_br.jpg'
+import disc2 from '../assets/images/disc_fun.jpg'
 
 export default function Hobbies() {
   return (
-    <>
-      <section id='hobbies' className="min-h-screen py-20">
-        <h1 className='moirai-one flex justify-center text-5xl md:text-8xl pb-5'>HOBBIES</h1>
-        <div className='flex items-center'>
-          <div className="max-w-6xl 2xl:max-w-7xl mx-auto w-full">
-            <div className='grid md:grid-cols-5 gap-8 items-center'>
-              <div className='relative bg-amber-200 w-full h-100'>
-                <span className='absolute bottom-2 w-full flex justify-center text-5xl'>SPORT</span>
-                <img src={table} className='absolute h-50 bottom-40 right-10 scale-x-[-1]' />
-                <img src={wilson} className='absolute rotate-25 h-80 left-10 bottom-30' />
-                <img src={mikasa} className='absolute h-35 bottom-20 right-0 drop-shadow-2xl' />
-              </div>
-              <div className='relative bg-blue-300 w-full h-100'>
-                <span className='absolute bottom-2 w-full flex justify-center text-5xl'>DRAW</span>
-                <img src={draw1} className='absolute rotate-x-50 rotate-z-45 top-45 h-40 left-6 drop-shadow-2xl' />
-                <img src={draw3} className='absolute rotate-x-50 rotate-z-45 top-25 h-42 left-8 drop-shadow-2xl' />
-                <img src={draw2} className='absolute rotate-x-50 rotate-z-45 top-0 h-43 left-8 drop-shadow-2xl' />
-              </div>
-              <div className='relative bg-orange-200 w-full h-100'>
-                <span className='absolute bottom-2 w-full flex justify-center text-5xl'>FILM</span>
-                <img src={inception} className='absolute bottom-60 h-45 left-1 drop-shadow-2xl' />
-                <img src={princess} className='absolute top-20 h-45 right-2 drop-shadow-2xl' />
-                <img src={ponyo} className='absolute top-42 h-42 left-2 drop-shadow-2xl' />
-              </div>
-              <div className='relative bg-pink-300 w-full h-100'>
-                <span className='absolute bottom-2 w-full flex justify-center text-5xl'>MUSIC</span>
-                <img src={music} className='absolute top-42 h-42 left-2 ' />
-              </div>
-              <div className='relative bg-green-100 w-full h-100'>
-                <span className='absolute bottom-2 w-full flex justify-center text-5xl'>ART</span>
-                <img src={flower} className='absolute top-15 h-70 right-0' />
-                <img src={potery} className='absolute top-0 right-15' />
-              </div>
-            </div>
+    <section className="bg-zinc-950 py-20 px-6">
+      <h2 className="moirai-one text-7xl md:text-8xl text-white text-center mb-10 tracking-tight">
+        HOBBIES
+      </h2>
+      <div className="max-w-6xl mx-auto grid grid-cols-4 grid-rows-3 gap-4 h-[600px]">
+
+        {/* SPORT — tall, 2 rows */}
+        <div className="relative col-span-1 row-span-2 rounded-2xl overflow-hidden border border-amber-300/50 bg-zinc-900 group">
+          <div className="absolute inset-0 bg-gradient-to-r from-amber-300/30 to-transparent" />
+          <img src={wilson} className="absolute h-70 top-4 right-4 rotate-12 opacity-90" />
+          <img src={mikasa} className="absolute h-30 bottom-25 left-1/6 drop-shadow-lg" />
+          <img src={table} className="absolute h-45 top-7 left-0 scale-x-[-1] " />
+          <div className="absolute bottom-0 left-0 right-0 p-2 bg-gradient-to-t from-zinc-950">
+            <span className="moirai-one text-amber-400 text-4xl">SPORT</span>
+            <p className="text-zinc-500 text-md mt-1 uppercase tracking-widest">volleyball & table tennis</p>
           </div>
         </div>
-      </section>
-    </>
-  );
+
+        {/* ART — small */}
+        <div className="relative col-span-1 row-span-1 rounded-2xl overflow-hidden border border-green-300/60 bg-zinc-900">
+          <div className="absolute inset-0 bg-gradient-to-br from-green-300/30 to-transparent" />
+          <img src={flower} className="absolute h-full right-0 bottom-0 object-contain opacity-90" />
+          <img src={potery} className="absolute top-0 left-20 -translate-x-1/2 h-45 object-contain opacity-90" />
+          <div className="absolute bottom-0 left-0 p-2 bg-gradient-to-t from-zinc-950 w-full">
+            <span className="moirai-one text-green-300 text-4xl">ART</span>
+            <p className="text-zinc-500 text-md mt-1 uppercase tracking-widest">pottery & florals</p>
+          </div>
+        </div>
+
+        {/* DRAW — wide, 2 cols */}
+        <div className="relative col-span-2 row-span-1 rounded-2xl overflow-hidden border border-blue-300/50 bg-zinc-900 group">
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-500/30 to-transparent" />
+          <div className="flex gap-2 absolute bottom-3 right-3 top-3 items-center">
+            <img src={draw1} className="h-full object-cover rounded-lg flex-1" />
+            <img src={draw2} className="h-full object-cover rounded-lg  flex-1" />
+            <img src={draw3} className="h-full object-cover rounded-lg  flex-1" />
+          </div>
+          <div className="absolute bottom-0 left-0 p-2 bg-gradient-to-t from-zinc-950 w-full">
+            <span className="moirai-one text-blue-300 text-4xl">DRAW</span>
+            <p className="text-zinc-500 text-md mt-1 uppercase tracking-widest">illustration & sketching</p>
+          </div>
+        </div>
+
+        {/* FILM — tall, 2 rows */}
+        <div className="relative col-span-2 row-span-1 rounded-2xl overflow-hidden border border-orange-400/50 bg-zinc-900">
+          <div className="absolute inset-0 bg-gradient-to-b from-orange-300/20 to-transparent" />
+          <div className="flex gap-2 absolute bottom-3 right-3 top-3 items-center">
+            <img src={inception} className="h-full object-cover rounded-lg flex-1" />
+            <img src={ponyo} className="h-full object-cover rounded-lg flex-1" />
+            <img src={princess} className="h-full object-cover rounded-lg flex-1" />
+          </div>
+          <div className="absolute bottom-0 left-0 p-2 bg-gradient-to-t from-zinc-950 w-full">
+            <span className="moirai-one text-orange-300 text-4xl">FILM</span>
+            <p className="text-zinc-500 text-md mt-1 uppercase tracking-widest">anime & cinema</p>
+          </div>
+        </div>
+
+        {/* MUSIC — wide, 2 cols */}
+        <div className="relative col-span-1 row-span-1 rounded-2xl overflow-hidden border border-pink-400/50 bg-zinc-900">
+          <div className="absolute inset-0 bg-gradient-to-l from-pink-400/30 to-transparent" />
+          <img src={disc1} className="absolute h-28 top-4 left-1/2 rounded-full" style={{ animation: 'spin 9s linear infinite' }} />
+          <img src={disc2} className="absolute h-24 top-6 left-1/3 rounded-full" style={{ animation: 'spin 7s linear infinite reverse' }} />
+          <div className="absolute bottom-0 left-0 p-2 bg-gradient-to-t from-zinc-950 w-full">
+            <span className="moirai-one text-pink-300 text-4xl">MUSIC</span>
+            <p className="text-zinc-500 text-md mt-1 uppercase tracking-widest">Pop & MPB</p>
+          </div>
+        </div>
+
+      </div>
+      <style>{`@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }`}</style>
+    </section>
+  )
 }
