@@ -1,4 +1,4 @@
-import paper from '../assets/images/projects.png'
+import paper from '../assets/images/project_bg.jpg'
 import pin1 from '../assets/images/pin1.png'
 import pin2 from '../assets/images/pin2.png'
 import folder1 from '../assets/images/folder1.png'
@@ -18,17 +18,16 @@ const projects = [
 
 export default function Projects() {
   return (
-    <>
-      <section id='projects' className="min-h-screen flex items-center">
-        <div className="relative max-w-6xl 2xl:max-w-7xl mx-auto px-10 py-20 w-full">
-          <img className='absolute object-contain h-25 scale-x-[-1] top-8 left-25' src={pin1} />
-          <img className='absolute object-contain h-25 top-3 right-4' src={pin2} />
-          <img className='w-full h-full object-contain' src={paper} />
-          <div className="absolute inset-0 flex items-center px-16">
-            <FolderCarousel projects={projects} folderImages={[folder1, folder2, folder3, folder4]} />
-          </div>
+    <section id='projects' className="min-h-screen flex items-center">
+      <div className="relative max-w-6xl 2xl:max-w-7xl mx-auto px-10 py-20 w-full">
+        <p className='absolute text-zinc-800 text-7xl left-1/5 top-35'>Projects:</p>
+        <img className='absolute object-contain h-21 scale-x-[-1] top-5 left-15' src={pin1} />
+        <img className='absolute object-contain h-25 top-3 right-13' src={pin2} />
+        <img className='w-full h-full object-contain' src={paper} />
+        <div className="absolute inset-0 flex items-center px-16">
+          <FolderCarousel projects={projects} folderImages={[folder1, folder2, folder3, folder4]} />
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 }

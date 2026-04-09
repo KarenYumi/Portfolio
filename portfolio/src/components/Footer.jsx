@@ -100,10 +100,10 @@ export default function Footer() {
         className="absolute bottom-8 right-10 group flex flex-col items-center gap-1 cursor-pointer"
         aria-label="Back to top"
       >
-        <div className="w-10 h-10 rounded-full border border-zinc-700 flex items-center justify-center text-zinc-400 group-hover:border-violet-500 group-hover:text-white group-hover:bg-violet-500/20 transition-all duration-300">
+        <div className="w-10 h-10 rounded-full border border-zinc-500 flex items-center justify-center text-zinc-400 group-hover:border-violet-500 group-hover:text-white group-hover:bg-violet-500/20 transition-all duration-300">
           <ArrowUp size={18} />
         </div>
-        <span className="text-zinc-600 text-[10px] uppercase tracking-widest group-hover:text-violet-500 transition-colors duration-300">top</span>
+        <span className="text-zinc-400 text-[10px] uppercase tracking-widest group-hover:text-violet-500 transition-colors duration-300">top</span>
       </button>
     </footer>
   );
