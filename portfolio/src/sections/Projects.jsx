@@ -1,4 +1,3 @@
-import paper from '../assets/images/project_bg.jpg'
 import pin1 from '../assets/images/pin1.png'
 import pin2 from '../assets/images/pin2.png'
 import folder1 from '../assets/images/folder1.png'
@@ -18,15 +17,25 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id='projects' className="min-h-screen flex items-center">
-      <div className="relative max-w-6xl 2xl:max-w-7xl mx-auto px-10 py-20 w-full">
-        <p className='absolute text-zinc-800 text-7xl left-1/5 top-35'>Projects:</p>
-        <img className='absolute object-contain h-21 scale-x-[-1] top-5 left-15' src={pin1} />
-        <img className='absolute object-contain h-25 top-3 right-13' src={pin2} />
-        <img className='w-full h-full object-contain' src={paper} />
-        <div className="absolute inset-0 flex items-center px-16">
-          <FolderCarousel projects={projects} folderImages={[folder1, folder2, folder3, folder4]} />
+    <section
+      id='projects'
+      className="bg-zinc-950 py-20 px-6 overflow-hidden relative"
+    >
+      <div className="max-w-6xl 2xl:max-w-7xl mx-auto relative">
+        <div className="flex items-end justify-between mb-2">
+          <h2 className="funny-font text-7xl md:text-8xl text-white tracking-tight leading-none">
+            PROJECTS
+          </h2>
+          <span className="funny-font text-5xl md:text-6xl text-white leading-none mb-1">
+            0{projects.length}
+          </span>
         </div>
+        <div className="h-px bg-linear-to-r from-pink-400 via-violet-400 to-transparent flex-1" />
+
+        <FolderCarousel
+          projects={projects}
+          folderImages={[folder1, folder2, folder3, folder4]}
+        />
       </div>
     </section>
   );

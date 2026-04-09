@@ -18,8 +18,8 @@ export default function Hobbies() {
       <h2 className="moirai-one text-7xl md:text-8xl text-white text-center mb-10 tracking-tight">
         HOBBIES
       </h2>
-      <div className="max-w-6xl mx-auto grid grid-cols-4 grid-rows-3 gap-4 h-150">
-        <div className="relative col-span-1 row-span-2 rounded-2xl overflow-hidden border border-amber-300/50 bg-zinc-900 group">
+      <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 md:grid-rows-3 gap-4 md:h-150">
+        <div className="relative col-span-2 md:col-span-1 md:row-span-2 h-48 md:h-auto rounded-2xl overflow-hidden border border-amber-300/50 bg-zinc-900 group">
           <div className="absolute inset-0 bg-linear-to-r from-amber-300/30 to-transparent" />
           <img src={wilson} className="absolute h-70 top-4 right-4 rotate-12 opacity-90" />
           <img src={mikasa} className="absolute h-30 bottom-25 left-1/6 drop-shadow-lg" />
@@ -30,7 +30,7 @@ export default function Hobbies() {
           </div>
         </div>
 
-        <div className="relative col-span-1 row-span-1 rounded-2xl overflow-hidden border border-green-300/60 bg-zinc-900">
+        <div className="relative col-span-1 h-48 md:h-auto rounded-2xl overflow-hidden border border-green-300/60 bg-zinc-900">
           <div className="absolute inset-0 bg-linear-to-br from-green-300/30 to-transparent" />
           <img src={flower} className="absolute h-full right-0 bottom-0 object-contain opacity-90" />
           <img src={potery} className="absolute top-0 left-20 -translate-x-1/2 h-45 object-contain opacity-90" />
@@ -40,7 +40,7 @@ export default function Hobbies() {
           </div>
         </div>
 
-        <div className="relative col-span-2 row-span-1 rounded-2xl overflow-hidden border border-blue-300/50 bg-zinc-900 group">
+        <div className="relative col-span-2 h-48 md:h-auto rounded-2xl overflow-hidden border border-blue-300/50 bg-zinc-900 group order-4 md:order-3">
           <div className="absolute inset-0 bg-linear-to-r from-blue-500/30 to-transparent" />
           <div className="flex gap-2 absolute bottom-3 right-3 top-3 items-center">
             <img src={draw1} className="h-full object-cover rounded-lg flex-1" />
@@ -53,7 +53,7 @@ export default function Hobbies() {
           </div>
         </div>
 
-        <div className="relative col-span-2 row-span-1 rounded-2xl overflow-hidden border border-orange-400/50 bg-zinc-900">
+        <div className="relative col-span-2 h-48 md:h-auto rounded-2xl overflow-hidden border border-orange-400/50 bg-zinc-900 order-5 md:order-4">
           <div className="absolute inset-0 bg-linear-to-b from-orange-300/20 to-transparent" />
           <div className="flex gap-2 absolute bottom-3 right-3 top-3 items-center">
             <img src={inception} className="h-full object-cover rounded-lg flex-1" />
@@ -66,7 +66,7 @@ export default function Hobbies() {
           </div>
         </div>
 
-        <div className="relative col-span-1 row-span-1 rounded-2xl overflow-hidden border border-pink-400/50 bg-zinc-900">
+        <div className="relative col-span-1 h-48 md:h-auto rounded-2xl overflow-hidden border border-pink-400/50 bg-zinc-900 order-3 md:order-5">
           <div className="absolute inset-0 bg-linear-to-l from-pink-400/30 to-transparent" />
           <img src={disc1} className="absolute h-28 top-4 left-1/2 rounded-full" style={{ animation: 'spin 9s linear infinite' }} />
           <img src={disc2} className="absolute h-24 top-6 left-1/3 rounded-full" style={{ animation: 'spin 7s linear infinite reverse' }} />

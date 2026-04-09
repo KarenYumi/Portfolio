@@ -22,7 +22,7 @@ export default function HangingCharm() {
         <img
           src={charm}
           alt="Pingente decorativo"
-          className="w-30 md:w-42 select-none drop-shadow-[0_10px_20px_rgba(0,0,0,0.35)]"
+          className="w-30 md:w-42 sx:hidden select-none drop-shadow-[0_10px_20px_rgba(0,0,0,0.35)]"
           style={{
             transform: `rotate(${rotation}deg)`,
             transformOrigin: 'top center',

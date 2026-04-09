@@ -30,17 +30,15 @@ export default function Footer() {
         style={{ background: 'radial-gradient(circle, rgba(244,114,182,0.35) 5%, transparent 70%)' }}
       />
       <div className="relative z-10 max-w-6xl 2xl:max-w-7xl mx-auto px-10 py-10 w-full">
-
-        <div className="grid md:grid-cols-2 gap-16 items-start">
+        <div className="grid md:grid-cols-2 gap-8 items-start">
           <div className="flex flex-col gap-6">
             <div className="flex items-center gap-5">
               <div className="relative shrink-0">
                 <img
                   src={face}
-                  className="relative w-25 h-25 rounded-full object-cover border-2 border-zinc-950"
+                  className="relative w-25 h-25 rounded-full object-cover "
                 />
               </div>
-              {/* Available badge */}
               <div className="flex flex-col gap-1">
                 <span className="cinzel-font text-lg text-white font-semibold tracking-wide">Karen Yumi Matsuguma Silva</span>
                 <span className="text-zinc-400 text-sm">Full-Stack Developer</span>
@@ -88,23 +86,18 @@ export default function Footer() {
           <span className="text-zinc-400 text-xs tracking-widest uppercase">
             © 2026 Karen Yumi — All rights reserved
           </span>
-          <span className="text-zinc-400 text-xs">
-            Designed & built with ♥ from Brazil
-          </span>
+          <button
+            onClick={scrollToTop}
+            className="group flex flex-col items-center gap-1 cursor-pointer"
+            aria-label="Back to top"
+          >
+            <div className="w-10 h-10 rounded-full border border-zinc-500 flex items-center justify-center text-zinc-400 group-hover:border-violet-500 group-hover:text-white group-hover:bg-violet-500/20 transition-all duration-300">
+              <ArrowUp size={18} />
+            </div>
+            <span className="text-zinc-400 text-[10px] uppercase tracking-widest group-hover:text-violet-500 transition-colors duration-300">top</span>
+          </button>
         </div>
       </div>
-
-      {/* Back to top */}
-      <button
-        onClick={scrollToTop}
-        className="absolute bottom-8 right-10 group flex flex-col items-center gap-1 cursor-pointer"
-        aria-label="Back to top"
-      >
-        <div className="w-10 h-10 rounded-full border border-zinc-500 flex items-center justify-center text-zinc-400 group-hover:border-violet-500 group-hover:text-white group-hover:bg-violet-500/20 transition-all duration-300">
-          <ArrowUp size={18} />
-        </div>
-        <span className="text-zinc-400 text-[10px] uppercase tracking-widest group-hover:text-violet-500 transition-colors duration-300">top</span>
-      </button>
     </footer>
   );
 }

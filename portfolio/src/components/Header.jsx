@@ -5,24 +5,26 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 w-full z-50 backdrop-blur bg-zinc-950/50 border-b border-zinc-500">
-      <div className="max-w-6xl mx-auto px-6 py-5 flex items-center">
+      <div className="max-w-6xl mx-auto px-6 py-5 grid grid-cols-2 md:grid-cols-3 items-center">
         <h1 className="text-xl font-bold tracking-tight">
-          Karen.dev
+          Karen's Portfolio
         </h1>
 
-        <nav className="hidden md:flex gap-8 text-sm text-zinc-300 mx-auto">
+        <nav className="hidden md:flex justify-center gap-8 text-sm text-zinc-300">
           <a href="#about" className="hover:text-white transition">About</a>
           <a href="#resume" className="hover:text-white transition">Resume</a>
           <a href="#projects" className="hover:text-white transition">Projects</a>
           <a href="#footer" className="hover:text-white transition">Contact</a>
         </nav>
 
-        <button
-          onClick={() => setMenuOpen(!menuOpen)}
-          className="md:hidden text-white"
-        >
-          ☰
-        </button>
+        <div className="flex justify-end">
+          <button
+            onClick={() => setMenuOpen(!menuOpen)}
+            className="md:hidden text-white"
+          >
+            ☰
+          </button>
+        </div>
       </div>
 
       {menuOpen && (
