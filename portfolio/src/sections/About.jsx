@@ -62,10 +62,10 @@ export default function About() {
                 <img src={happyFace} className="w-full h-full rounded-full border border-zinc-800 object-cover" />
                 <img src={cursor} className="absolute w-40 top-80" />
                 <span className="absolute top-6 -left-3 bg-emerald-400 text-white text-xl px-6 py-2 rounded-full shadow-lg">
-                  Brasilian
+                  Brazilian
                 </span>
                 <span className="absolute bottom-10 -right-2 bg-orange-600 text-white text-xl px-6 py-2 rounded-full shadow-lg">
-                  9nd May 2003
+                  9th May 2003
                 </span>
               </div>
             </div>

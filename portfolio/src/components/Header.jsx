@@ -14,7 +14,7 @@ export default function Header() {
           <a href="#about" className="hover:text-white transition">About</a>
           <a href="#resume" className="hover:text-white transition">Resume</a>
           <a href="#projects" className="hover:text-white transition">Projects</a>
-          <a href="#contact" className="hover:text-white transition">Contact</a>
+          <a href="#footer" className="hover:text-white transition">Contact</a>
         </nav>
 
         <button
@@ -27,10 +27,10 @@ export default function Header() {
 
       {menuOpen && (
         <div className="md:hidden px-6 pb-4 space-y-4 text-zinc-300">
-          <a href="#about" className="block">Sobre</a>
-          <a href="#projects" className="block">Projetos</a>
-          <a href="#skills" className="block">Skills</a>
-          <a href="#contact" className="block">Contato</a>
+          <a href="#about" className="block">About</a>
+          <a href="#resume" className="block">Resume</a>
+          <a href="#projects" className="block">Projects</a>
+          <a href="#footer" className="block">Contact</a>
         </div>
       )}
     </header>

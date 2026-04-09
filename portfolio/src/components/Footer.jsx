@@ -6,13 +6,6 @@ export default function Footer() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
-  const navLinks = [
-    { label: 'About', href: '#about' },
-    { label: 'Resume', href: '#resume' },
-    { label: 'Projects', href: '#projects' },
-    { label: 'Hobbies', href: '#hobbies' },
-  ]
-
   const socials = [
     { icon: <Github size={20} />, href: 'https://github.com/KarenYumi', label: 'GitHub' },
     { icon: <Linkedin size={20} />, href: 'https://www.linkedin.com/in/karenyumi', label: 'LinkedIn' },
@@ -23,9 +16,9 @@ export default function Footer() {
   return (
     <footer id="footer" className="relative overflow-hidden bg-zinc-950">
 
-      <div className="h-px w-full bg-gradient-to-r from-transparent via-pink-400 to-transparent" />
+      <div className="h-px w-full bg-linear-to-r from-transparent via-pink-400 to-transparent" />
       <div
-        className="absolute  w-206 h-206 rounded-full pointer-events-none"
+        className="absolute w-206 h-206 rounded-full pointer-events-none"
         style={{ background: 'radial-gradient(circle, rgba(167,139,250,0.25) 5%, transparent 70%)' }}
       />
       <div
