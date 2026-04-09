@@ -134,26 +134,16 @@ export default function Resume() {
               <div className="relative">
                 <div className="absolute w-4 h-4 bg-pink-400 rounded-full -left-[33px] top-1 border-4 border-zinc-950" />
                 <h4 className="text-xl font-bold">Software Development Intern</h4>
-                <p className="text-sm font-medium italic">
-                  Brisa - Sociedade e Tecnologia
+                <p className="text-sm font-medium italic text-zinc-400">
+                  Brisa - Sociedade para o Desenvolvimento da Tecnologia da Informação • Sep 2024 — Sep 2025
                 </p>
-                <div className="text-zinc-400 mt-3 text-sm leading-relaxed space-y-2">
-                  <p>
-                    Focus on Software Engineering, Data Structures, and Full-Stack Development.
-                  </p>
-                </div>
               </div>
               <div className="relative">
                 <div className="absolute w-4 h-4 bg-pink-400 rounded-full -left-[33px] top-1 border-4 border-zinc-950" />
                 <h4 className="text-xl font-bold">Software Developer</h4>
-                <p className="text-sm font-medium italic">
-                  Brisa - Sociedade e Tecnologia
+                <p className="text-sm font-medium italic text-zinc-400">
+                  Brisa - Sociedade para o Desenvolvimento da Tecnologia da Informação • Sep 2025 — Present
                 </p>
-                <div className="text-zinc-400 mt-3 text-sm leading-relaxed space-y-2">
-                  <p>
-                    Focus on Software Engineering, Data Structures, and Full-Stack Development.
-                  </p>
-                </div>
               </div>
             </div>
           </div>

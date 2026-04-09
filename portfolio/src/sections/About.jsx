@@ -13,7 +13,7 @@ export default function About() {
               I'm Karen
             </h1>
             <h2 className="text-xl md:text-2xl text-zinc-300 mt-2">
-              A Software Developer Full-Stack
+              Full-Stack Developer based in São Paulo
             </h2>
             <p className="text-zinc-400 mt-6 max-w-xl leading-relaxed">
               I'm always learning something new and keeping up with what's happening in the world.
